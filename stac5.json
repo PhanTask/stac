@@ -8,15 +8,7 @@
   ],
   "id": "local-image.tif",
   "properties": {
-    "eo:cloud_cover": 1.2,
-    "eo:gsd": 30,
-    "eo:bands": [
-        {
-          "name": "band-1",
-          "common_name": "gray",
-          "center_wavelength": 0.63
-        }],
-    "proj:epsg": null,
+    "proj:epsg": 3857,
     "proj:geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -144,8 +136,7 @@
       "eo:bands": [
         {
           "name": "band-1",
-          "common_name": "gray",
-          "center_wavelength": 0.63
+          "common_name": "gray"
         }],
       "raster:bands": [
       {
