@@ -1,6 +1,9 @@
 {
   "type": "Feature",
   "stac_version": "1.0.0",
+  "stac_extensions": [
+  "raster"
+  ],
   "id": "local-image",
   "properties": {
     "datetime": "2021-08-24T04:34:27.181905Z"
