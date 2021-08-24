@@ -1,54 +1,53 @@
 {
   "type": "Feature",
   "stac_version": "1.0.0",
-  "id": "COG",
+  "id": "image.tif",
   "properties": {
-    "comments:name": "myfile",
-    "proj:epsg": 32632,
+    "proj:epsg": null,
     "proj:geometry": {
       "type": "Polygon",
       "coordinates": [
         [
           [
-            342765,
-            5971585
+            519281.4480616912,
+            3749778.53378547
           ],
           [
-            342765,
-            5682885
+            519281.4480616912,
+            2965778.53378547
           ],
           [
-            674215,
-            5682885
+            1248281.4480616911,
+            2965778.53378547
           ],
           [
-            674215,
-            5971585
+            1248281.4480616911,
+            3749778.53378547
           ],
           [
-            342765,
-            5971585
+            519281.4480616912,
+            3749778.53378547
           ]
         ]
       ]
     },
     "proj:bbox": [
-      342765,
-      5682885,
-      674215,
-      5971585
+      519281.4480616912,
+      2965778.53378547,
+      1248281.4480616911,
+      3749778.53378547
     ],
     "proj:shape": [
-      28870,
-      33145
+      784,
+      729
     ],
     "proj:transform": [
-      10,
+      1000,
       0,
-      342765,
+      519281.4480616912,
       0,
-      -10,
-      5971585,
+      -1000,
+      3749778.53378547,
       0,
       0,
       1
@@ -60,142 +59,85 @@
         "scale": 1,
         "offset": 0,
         "statistics": {
-          "mean": 70.14680057905686,
+          "mean": 44.50730662635424,
           "minimum": 0,
           "maximum": 255,
-          "stdev": 36.47197403839734,
-          "valid_percent": 49.83785997057175
+          "stdev": 66.15206213476746,
+          "valid_percent": 0.00017496710618403741
         },
         "histogram": {
           "count": 11,
           "min": 0,
           "max": 255,
           "buckets": [
-            21135,
-            129816,
-            152194,
-            76363,
-            39423,
-            20046,
-            10272,
-            3285,
-            1115,
-            1574
-          ]
-        }
-      },
-      {
-        "sampling": "area",
-        "data_type": "uint8",
-        "scale": 1,
-        "offset": 0,
-        "statistics": {
-          "mean": 70.72913714816694,
-          "minimum": 0,
-          "maximum": 255,
-          "stdev": 34.031434334640124,
-          "valid_percent": 49.83785997057175
-        },
-        "histogram": {
-          "count": 11,
-          "min": 0,
-          "max": 255,
-          "buckets": [
-            14829,
-            116732,
-            171933,
-            81023,
-            38736,
-            18977,
-            8362,
-            2259,
-            918,
-            1454
-          ]
-        }
-      },
-      {
-        "sampling": "area",
-        "data_type": "uint8",
-        "scale": 1,
-        "offset": 0,
-        "statistics": {
-          "mean": 47.96346845392258,
-          "minimum": 0,
-          "maximum": 255,
-          "stdev": 32.447819767110225,
-          "valid_percent": 49.83785997057175
-        },
-        "histogram": {
-          "count": 11,
-          "min": 0,
-          "max": 255,
-          "buckets": [
-            110478,
-            177673,
-            93767,
-            41101,
-            20804,
-            7117,
-            1939,
-            856,
-            829,
-            659
+            368257,
+            11667,
+            23105,
+            32557,
+            41356,
+            41431,
+            29574,
+            8454,
+            8268,
+            6867
           ]
         }
       }
     ],
-    "datetime": "2020-04-22T00:00:00Z"
+    "datetime": "2021-08-24T05:20:14.758576Z"
   },
   "geometry": {
     "type": "Polygon",
     "coordinates": [
       [
         [
-          6.608576517072109,
-          53.89267160832536
+          115.32595809704877,
+          34.998306633502864
         ],
         [
-          6.608576517072109,
-          51.270642883468916
+          115.32595809704877,
+          27.44288984933576
         ],
         [
-          11.64938680867944,
-          51.270642883468916
+          123.85510787175281,
+          27.44288984933576
         ],
         [
-          11.64938680867944,
-          53.89267160832536
+          123.85510787175281,
+          34.998306633502864
         ],
         [
-          6.608576517072109,
-          53.89267160832536
+          115.32595809704877,
+          34.998306633502864
         ]
       ]
     ]
   },
   "links": [
     {
-      "rel": "collection",
-      "href": "myprivatecollection",
+      "rel": "root",
+      "href": "catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "catalog.json",
       "type": "application/json"
     }
   ],
   "assets": {
-    "mosaic": {
-      "href": "https://somewhere.overtherainbow.io/S-2_20200422_COG.tif",
-      "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+    "asset": {
+      "href": "https://oin-hotosm.s3.amazonaws.com/60fbca155a90f10006fd2fc3/0/60fbca155a90f10006fd2fc4.tif"
     }
   },
   "bbox": [
-    6.608576517072109,
-    51.270642883468916,
-    11.64938680867944,
-    53.89267160832536
+    115.32595809704877,
+    27.44288984933576,
+    123.85510787175281,
+    34.998306633502864
   ],
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/raster/v1.0.0/schema.json"
-  ],
-  "collection": "myprivatecollection"
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+  ]
 }
