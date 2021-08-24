@@ -146,7 +146,39 @@
           "name": "band-1",
           "common_name": "gray",
           "center_wavelength": 0.63
-        }]
+        }],
+      "raster:bands": [
+      {
+        "sampling": "area",
+        "data_type": "uint8",
+        "scale": 1,
+        "offset": 0,
+        "statistics": {
+          "mean": 44.50730662635424,
+          "minimum": 0,
+          "maximum": 255,
+          "stdev": 66.15206213476746,
+          "valid_percent": 0.00017496710618403741
+        },
+        "histogram": {
+          "count": 11,
+          "min": 0,
+          "max": 255,
+          "buckets": [
+            368257,
+            11667,
+            23105,
+            32557,
+            41356,
+            41431,
+            29574,
+            8454,
+            8268,
+            6867
+          ]
+        }
+      }
+    ]
     }
   },
   "bbox": [
