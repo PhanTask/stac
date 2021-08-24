@@ -1,11 +1,16 @@
 {
   "type": "Feature",
   "stac_version": "1.0.0",
-  "id": "image.tif",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+  ],
+  "id": "local-image.tif",
   "properties": {
     "eo:cloud_cover": 1.2,
-	"eo:gsd": 30,
-	"eo:bands": [
+    "eo:gsd": 30,
+    "eo:bands": [
         {
           "name": "band-1",
           "common_name": "gray",
@@ -149,10 +154,5 @@
     27.44288984933576,
     123.85510787175281,
     34.998306633502864
-  ],
-  "stac_extensions": [
-    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
-    "raster",
-    "eo"
   ]
 }
