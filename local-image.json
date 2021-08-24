@@ -4,6 +4,13 @@
   "id": "image.tif",
   "properties": {
     "eo:cloud_cover": 1.2,
+	"eo:gsd": 30,
+	"eo:bands": [
+        {
+          "name": "band-1",
+          "common_name": "gray",
+          "center_wavelength": 0.63
+        }],
     "proj:epsg": null,
     "proj:geometry": {
       "type": "Polygon",
@@ -131,8 +138,9 @@
       "href": "https://oin-hotosm.s3.amazonaws.com/60fbca155a90f10006fd2fc3/0/60fbca155a90f10006fd2fc4.tif",
 	  "eo:bands": [
         {
-          "name": "band1",
-          "common_name": "band1"
+          "name": "band-1",
+          "common_name": "gray",
+          "center_wavelength": 0.63
         }]
     }
   },
@@ -144,7 +152,7 @@
   ],
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
-    "https://stac-extensions.github.io/raster/v1.1.0/schema.json",
-    "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    "raster",
+    "eo"
   ]
 }
