@@ -1,0 +1,158 @@
+{
+  "type": "Feature",
+  "stac_version": "1.0.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+  ],
+  "id": "local-image.tif",
+  "properties": {
+    "eo:cloud_cover": 1.2,
+    "eo:gsd": 30,
+    "eo:bands": [
+        {
+          "name": "band-1",
+          "common_name": "gray",
+          "center_wavelength": 0.63
+        }],
+    "proj:epsg": null,
+    "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            519281.4480616912,
+            3749778.53378547
+          ],
+          [
+            519281.4480616912,
+            2965778.53378547
+          ],
+          [
+            1248281.4480616911,
+            2965778.53378547
+          ],
+          [
+            1248281.4480616911,
+            3749778.53378547
+          ],
+          [
+            519281.4480616912,
+            3749778.53378547
+          ]
+        ]
+      ]
+    },
+    "proj:bbox": [
+      519281.4480616912,
+      2965778.53378547,
+      1248281.4480616911,
+      3749778.53378547
+    ],
+    "proj:shape": [
+      784,
+      729
+    ],
+    "proj:transform": [
+      1000,
+      0,
+      519281.4480616912,
+      0,
+      -1000,
+      3749778.53378547,
+      0,
+      0,
+      1
+    ],
+    "raster:bands": [
+      {
+        "sampling": "area",
+        "data_type": "uint8",
+        "scale": 1,
+        "offset": 0,
+        "statistics": {
+          "mean": 44.50730662635424,
+          "minimum": 0,
+          "maximum": 255,
+          "stdev": 66.15206213476746,
+          "valid_percent": 0.00017496710618403741
+        },
+        "histogram": {
+          "count": 11,
+          "min": 0,
+          "max": 255,
+          "buckets": [
+            368257,
+            11667,
+            23105,
+            32557,
+            41356,
+            41431,
+            29574,
+            8454,
+            8268,
+            6867
+          ]
+        }
+      }
+    ],
+    "datetime": "2021-08-24T05:20:14.758576Z"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          115.32595809704877,
+          34.998306633502864
+        ],
+        [
+          115.32595809704877,
+          27.44288984933576
+        ],
+        [
+          123.85510787175281,
+          27.44288984933576
+        ],
+        [
+          123.85510787175281,
+          34.998306633502864
+        ],
+        [
+          115.32595809704877,
+          34.998306633502864
+        ]
+      ]
+    ]
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "catalog.json",
+      "type": "application/json"
+    }
+  ],
+  "assets": {
+    "asset": {
+      "href": "https://oin-hotosm.s3.amazonaws.com/60fbca155a90f10006fd2fc3/0/60fbca155a90f10006fd2fc4.tif",
+	  "eo:bands": [
+        {
+          "name": "band-1",
+          "common_name": "gray",
+          "center_wavelength": 0.63
+        }]
+    }
+  },
+  "bbox": [
+    115.32595809704877,
+    27.44288984933576,
+    123.85510787175281,
+    34.998306633502864
+  ]
+}
